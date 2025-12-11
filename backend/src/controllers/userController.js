@@ -133,7 +133,7 @@ exports.register = async (req, res) => {
 };
 
 // -------------------------------------------------------------
-// LOGIN USER (used by auth login route)
+// LOGIN USER (used by auth login route), yeha logiyo featuren gareko user le matra access garna pauxa 
 // -------------------------------------------------------------
 exports.login = async (req, res) => {
   try {

@@ -2,11 +2,11 @@
 // If the user is NOT admin, they cannot access admin routes.
 
 module.exports = (req, res, next) => {
-  // If req.user is missing OR role is not admin → stop request
+  // If req.user is missing OR role is not admin → stop request , yeti admin haina vani tesko tei rokdinxa
   if (!req.user || req.user.role !== "admin") {
     return res.status(403).json({ message: "Admin access only" });
   }
 
-  // If role is admin → allow request
+  // If role is admin → allow request  , yedi admin vayo vani sabai vaihalo kam
   next();
 };

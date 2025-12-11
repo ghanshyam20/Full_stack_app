@@ -1,7 +1,7 @@
 const { Booking, User, Destination } = require("../models");
 
 // -----------------------------------------------------
-// USER — Create a Booking
+// USER — Create a Booking  this will help us to create booking 
 // -----------------------------------------------------
 exports.create = async (req, res) => {
   try {
@@ -29,7 +29,7 @@ exports.create = async (req, res) => {
 };
 
 // -----------------------------------------------------
-// USER — Update Booking  ⭐ NEW ⭐
+// USER — Update Booking   NEW this will update booking 
 // -----------------------------------------------------
 exports.update = async (req, res) => {
   try {
@@ -60,7 +60,7 @@ exports.update = async (req, res) => {
 };
 
 // -----------------------------------------------------
-// USER — View Own Bookings
+// USER — View Own Bookings this i skindaa get method we can say 
 // -----------------------------------------------------
 exports.myBookings = async (req, res) => {
   try {
@@ -80,7 +80,7 @@ exports.myBookings = async (req, res) => {
 };
 
 // -----------------------------------------------------
-// ADMIN — View ALL Bookings
+// ADMIN — View ALL Bookings , this is also kinda get method 
 // -----------------------------------------------------
 exports.all = async (req, res) => {
   try {
@@ -100,7 +100,7 @@ exports.all = async (req, res) => {
 };
 
 // -----------------------------------------------------
-// ADMIN — Delete Booking
+// ADMIN — Delete Booking , this is ofcourse delete method 
 // -----------------------------------------------------
 exports.delete = async (req, res) => {
   try {

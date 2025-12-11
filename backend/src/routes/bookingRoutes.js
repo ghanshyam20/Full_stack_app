@@ -8,7 +8,7 @@ const isAdmin = require("../middleware/isAdmin");
 // USER — create booking
 router.post("/", auth, ctrl.create);
 
-// USER — update booking  ⭐ NEW ⭐
+// USER — update booking  
 router.put("/:id", auth, ctrl.update);
 
 // USER — view own bookings
@@ -21,7 +21,7 @@ router.get("/", auth, isAdmin, ctrl.all);
 router.delete("/:id", auth, isAdmin, ctrl.delete);
 
 
-router.put("/:id", auth, ctrl.update);  // ⭐ user can update booking
+router.put("/:id", auth, ctrl.update);  // user can update booking
 
 
 module.exports = router;

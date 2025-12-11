@@ -44,7 +44,7 @@ module.exports = {
         { expiresIn: "7d" }
       );
 
-      // 🔥 SEND TOKEN + USER INFO (important for admin redirect)
+      //  This will SEND TOKEN + USER INFO so that its easy to (important for admin redirect)
       res.json({
         message: "Login successful",
         token,

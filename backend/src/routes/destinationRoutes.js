@@ -18,16 +18,16 @@ const storage = multer.diskStorage({
 const upload = multer({ storage });
 
 
-// ⭐️ MUST BE FIRST — SEARCH ROUTE
+//  MUST BE FIRST — SEARCH ROUTE
 router.get("/search", controller.searchDestinations);
 
-// ⭐️ MUST BE SECOND — GET ONE
+//  MUST BE SECOND — GET ONE
 router.get("/:id", controller.getDestinationById);
 
-// ⭐️ GET ALL DESTINATIONS
+//  GET ALL DESTINATIONS
 router.get("/", controller.getAllDestinations);
 
-// ⭐ ADMIN ROUTES
+//  ADMIN ROUTES
 router.post("/", upload.single("image"), controller.createDestination);
 router.put("/:id", upload.single("image"), controller.updateDestination);
 router.delete("/:id", controller.deleteDestination);

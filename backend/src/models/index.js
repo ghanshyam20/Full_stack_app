@@ -6,7 +6,7 @@ const Sequelize = require("sequelize");
 const basename = path.basename(__filename);
 const env = process.env.NODE_ENV || "development";
 
-// ✔ Use correct config folder
+// this will  Use correct config folder
 const config = require(path.join(__dirname, "../config/config.json"))[env];
 
 const db = {};
@@ -24,7 +24,7 @@ if (config.use_env_variable) {
   );
 }
 
-// ✔ Load all models automatically
+//  thsi wil Load all models automatically
 fs.readdirSync(__dirname)
   .filter((file) => 
     file.indexOf(".") !== 0 &&
@@ -39,7 +39,7 @@ fs.readdirSync(__dirname)
     db[model.name] = model;
   });
 
-// ✔ Run associations
+//  Run associations , yo sanga jodiyeko sabai chalxa yespaxi 
 Object.keys(db).forEach((modelName) => {
   if (db[modelName].associate) {
     db[modelName].associate(db);

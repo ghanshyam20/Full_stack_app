@@ -6,19 +6,19 @@ module.exports = (sequelize, DataTypes) => {
     {
       name: {
         type: DataTypes.STRING,
-        allowNull: true, // TEMPORARY FIX
+        allowNull: true, 
       },
       email: {
         type: DataTypes.STRING,
-        allowNull: true, // TEMPORARY FIX
+        allowNull: true,
       },
       phone: {
         type: DataTypes.STRING,
-        allowNull: true, // TEMPORARY FIX
+        allowNull: true, 
       },
       travelers: {
         type: DataTypes.INTEGER,
-        allowNull: true, // TEMPORARY FIX
+        allowNull: true, 
       },
       notes: {
         type: DataTypes.TEXT,

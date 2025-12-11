@@ -6,10 +6,10 @@ const { User } = require("../models");
 
 module.exports = async (req, res, next) => {
   try {
-    // 1. Read token from request header
+    // 1. this wil  Read token from request header
     const authHeader = req.headers.authorization;
 
-    // If no token → user is not logged in
+    // If no token → user is not logged in , yedi token xaina vaney user login xaina vanne bujhunxa
     if (!authHeader || !authHeader.startsWith("Bearer ")) {
       return res.status(401).json({ message: "No token provided" });
     }
@@ -20,10 +20,10 @@ module.exports = async (req, res, next) => {
     // 2. Verify token using the secret key
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
 
-    // 3. Find user from database using ID inside token
+    // 3. Find user from database using ID inside token , token vitra ko id use garera user nikalxa
     const user = await User.findByPk(decoded.id);
 
-    // If user does not exist → block access
+    // If user does not exist → block access ,, yedi user vayena vane xirna didaina 
     if (!user) {
       return res.status(401).json({ message: "User not found" });
     }

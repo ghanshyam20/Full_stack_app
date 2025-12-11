@@ -1,4 +1,4 @@
-const { Destination } = require("../models");   // ✔ CORRECT IMPORT
+const { Destination } = require("../models");   
 const { Op } = require("sequelize");
 
 exports.searchDestinations = async (req, res) => {

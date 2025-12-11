@@ -26,8 +26,8 @@ const db = require("./models");
 // Keep alter:true ONLY during development
 db.sequelize
   .sync({ alter: true })
-  .then(() => console.log("📦 Database synced with new models."))
-  .catch((err) => console.error("❌ Sync error:", err));
+  .then(() => console.log(" Database synced with new models la kam vayo ja ."))
+  .catch((err) => console.error("hait mula ko saag  Sync error:", err));
 
 // ---------------------------------------------------------
 // ROUTES
@@ -54,7 +54,7 @@ app.use("/api/reviews", require("./routes/reviewRoutes"));
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
-  console.log(`🔥 Server running at http://localhost:${PORT}`);
+  console.log(` Server running at http://localhost:${PORT}`);
 });
 
 module.exports = app;
