@@ -10,7 +10,7 @@ export default function DestinationForm({ initialData, onSave, onCancel }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Prepare data to send
+    // Prepare data to send , yesle data pathauna lai tayari vayera basxa 
     const formData = {
       name,
       description,

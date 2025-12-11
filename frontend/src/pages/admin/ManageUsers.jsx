@@ -3,7 +3,7 @@ import usersAPI from "../../api/usersAPI";
 
 export default function ManageUsers() {
   const [users, setUsers] = useState([]);
-  const [editingUser, setEditingUser] = useState(null); // user being edited
+  const [editingUser, setEditingUser] = useState(null); // tyesle pani time consuming garyo 
   const [form, setForm] = useState({ email: "", role: "" });
 
   useEffect(() => {
@@ -53,7 +53,7 @@ export default function ManageUsers() {
   // ----------------------- SAVE EDIT -----------------------
   const saveEdit = async () => {
     try {
-      await usersAPI.update(editingUser.id, form); // use your backend update route
+      await usersAPI.update(editingUser.id, form); // useed  backend update route
       setEditingUser(null);
       loadUsers();
       alert("User updated");

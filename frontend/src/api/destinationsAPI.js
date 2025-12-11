@@ -8,25 +8,25 @@ const destinationsAPI = {
     return res.data;
   },
 
-  // Get single destination by ID (what your frontend expects)
+  // Get single destination by ID (hamro frontend ko base ma hunxa yo sab )
   getById: async (id) => {
     const res = await api.get(`/api/destinations/${id}`);
     return res.data;
   },
 
-  // (Optional if you want to keep the old name)
+  // (this is for optional , hai ta)
   getOne: async (id) => {
     const res = await api.get(`/api/destinations/${id}`);
     return res.data;
   },
 
-  // SEARCH
+  // SEARCH , yesle yei kam garxa nam bata clear xa 
   search: async (query) => {
     const res = await api.get(`/api/destinations/search?q=${query}`);
     return res.data;
   },
 
-  // Admin — create destination
+  // Admin — create destination , yesle chai destination create garna help garxa 
   create: async (formData) => {
     const res = await api.post("/api/destinations", formData, {
       headers: {

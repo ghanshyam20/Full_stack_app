@@ -14,12 +14,12 @@ export default function Login() {
     try {
       const data = await authAPI.login({ email, password });
 
-      // ✅ SAVE EVERYTHING NEEDED FOR ADMIN PROTECTION
+      //  SAVE EVERYTHING NEEDED FOR ADMIN PROTECTION
       localStorage.setItem("token", data.token);
       localStorage.setItem("role", data.user.role);
       localStorage.setItem("email", data.user.email);
 
-      // 🚀 Redirect based on role
+      //  Redirect based on role
       if (data.user.role === "admin") {
         window.location.href = "/admin";
       } else {

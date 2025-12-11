@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  /* Prevent image stretching GLOBAL fix */
+  /*  thsi will Prevent image stretching GLOBAL fix , everytime i am afraid of this haha  */
   img {
     object-fit: cover;
   }

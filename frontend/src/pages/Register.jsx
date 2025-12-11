@@ -22,7 +22,7 @@ export default function Register() {
 
     // Password validation
     if (password !== confirmPassword) {
-      setMessage("❌ Passwords do not match");
+      setMessage("satana ,  Passwords do not match");
       return;
     }
 
@@ -33,7 +33,7 @@ export default function Register() {
         password,
       });
 
-      setMessage("✅ Registration successful! Redirecting...");
+      setMessage("hyvva,  Registration successful! Redirecting...");
       console.log(res);
 
       // Redirect after 1 second
@@ -42,7 +42,7 @@ export default function Register() {
       }, 1000);
 
     } catch (error) {
-      setMessage("❌ Registration failed. Email may already exist.");
+      setMessage(" Registration failed. Email may already exist.");
     }
   };
 

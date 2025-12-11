@@ -12,3 +12,8 @@ export default function Hero() {
     </div>
   );
 }
+
+
+
+// testing ko lagi haleko remove garnu parne xa
+

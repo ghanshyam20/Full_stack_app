@@ -12,7 +12,7 @@ import DestinationDetails from "./pages/DestinationDetails";
 
 // Booking pages
 import BookingForm from "./pages/BookingForm";
-import MyBookings from "./pages/MyBookings"; // ⭐ User booking history
+import MyBookings from "./pages/MyBookings"; //  User booking history
 
 // Admin pages
 import Admin from "./pages/Admin";

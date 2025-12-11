@@ -1,25 +1,25 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-// Simple Navbar that shows Login/Register OR Logout depending on token
+// Simple Navbar that shows Login/Register 
 export default function Navbar() {
   const [loggedIn, setLoggedIn] = useState(false);
   const navigate = useNavigate();
 
-  // Check token on page load
+  //  this wil Check token on page load
   useEffect(() => {
     const token = localStorage.getItem("token");
     setLoggedIn(!!token); // true if token exists
   }, []);
 
-  // Logout function
+  //  thsi is for Logout function
   const handleLogout = () => {
     localStorage.removeItem("token");
     setLoggedIn(false);
-    navigate("/"); // redirect home
+    navigate("/"); // it will rediret like return redirect in django redirect home
   };
 
-  // 🔥 Reusable classy hover effect
+  // Reusable classy hover effect
   const navLink = "relative group no-underline";
 
   const hoverBar = (
@@ -46,7 +46,7 @@ export default function Navbar() {
           {hoverBar}
         </Link>
 
-        {/* ⭐ SHOW ONLY WHEN USER LOGGED IN */}
+        {/*  SHOW ONLY WHEN USER LOGGED IN */}
         {loggedIn && (
           <Link to="/my-bookings" className={navLink}>
             My Bookings
