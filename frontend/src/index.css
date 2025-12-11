@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Prevent image stretching GLOBAL fix */
+  img {
+    object-fit: cover;
+  }
+
+  nav a {
+    text-decoration: none !important;
+  }
+
+  nav a:hover {
+    text-decoration: none !important;
+  }
+}
