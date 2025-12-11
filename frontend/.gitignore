@@ -68,4 +68,5 @@ build/
 
 # Upload folders 
 uploads/
+public/uploads/
 
